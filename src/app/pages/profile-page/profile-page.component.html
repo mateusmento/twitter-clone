@@ -1,0 +1,39 @@
+<header>
+	<div id="banner-container">
+		<img src="{{profile.banner}}" alt="">
+	</div>
+
+	<img id="avatar" src="{{profile.avatar}}">
+
+	<div id="flex-container">
+		<nav id="navbar">
+			<a href="">
+				<span id="title">Followers</span>
+				<span id="count">{{'15.6k'}}</span>
+			</a>
+			<a href="">
+				<span id="title">Posts</span>
+				<span id="count">{{'12.6K'}}</span>
+			</a>
+			<a href="">
+				<span id="title">Photos</span>
+				<span id="count">{{132}}</span>
+			</a>
+			<a href="">
+				<span id="title">Videos</span>
+				<span id="count">{{34}}</span>
+			</a>
+		</nav>
+	
+		<div class="button-container">
+			<button class="btn">Follow</button>
+			<button class="btn">Block</button>
+		</div>
+	</div>
+	
+</header>
+
+<div id="content">
+	<profile-card [profile]="profile"></profile-card>
+	<storyline [posts]="posts" [profile]="profile"></storyline>
+</div>

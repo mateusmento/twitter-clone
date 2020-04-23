@@ -1,0 +1,13 @@
+<div id="container">
+	<div id="description">
+		<span id="name">{{profile.name}}</span>
+		<span id="username">@{{profile.username}}</span>
+		<span id="bio">{{profile.bio}}</span>
+		<span id="location"><i class="fas fa-map-marker-alt"></i> {{profile.location}}</span>
+	</div>
+	
+	<div id="gallery">
+		<img *ngFor="let thumbnail of profile.gallery.thumbnails" src="{{thumbnail}}" alt="">
+		<a id="see-more-media" href="">{{profile.gallery.mediaCount}} Photos and videos</a>
+	</div>
+</div>

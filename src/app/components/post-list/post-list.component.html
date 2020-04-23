@@ -1,0 +1,14 @@
+<div id="post{{i}}" class="post" *ngFor="let post of postsReversedOrder; let i = index">
+
+	<div class="post-header">
+		<img class="post-avatar" src="{{post.owner.avatar}}">
+		<span class="post-name">{{post.owner.name}}</span>
+		<span class="separator">|</span>
+		<span class="post-postAt">{{getPostAt(post.postedAt)}}</span>
+	</div>
+
+	<div class="post-header">
+		<p>{{post.text}}</p>
+	</div>
+
+</div>

@@ -1,17 +1,11 @@
 {
   "extends": "../tslint.json",
   "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "kebab-case"
-    ]
+	"no-input-rename": false,
+	"no-output-on-prefix": false,
+	"no-output-rename": false,
+	"indent": [true, "tabs", 4],
+	"prefer-const": false,
+	"one-line": false
   }
 }

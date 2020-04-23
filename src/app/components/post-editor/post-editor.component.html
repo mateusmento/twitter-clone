@@ -1,0 +1,5 @@
+<textarea id="post-text-editor" [(ngModel)]="text" placeholder="New post..."></textarea>
+
+<div id="button-container">
+	<button class="btn" type="submit" [disabled]="disabledSubmit" (click)="post()">Post</button>
+</div>
